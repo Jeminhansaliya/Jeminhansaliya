@@ -1,0 +1,60 @@
+WEB:
+Whatever you want to share with other via internet that facility provided by web.
+WWW:
+This is world wide web also known as web because all the public websites or pages
+that users can access on their local computers and other devicesthrough the internet.
+Browser: 
+A computer program with a graphical user interface for displaying and navigating 
+between web pages.
+Addressbar:
+The address bar is the element that shows the current URL. The user can type a
+URL into it to navigate to a chosen website.
+Titlebar:
+The title bar is a horizontal bar located at the top of a window in a GUI 
+(graphical user interface).
+HTTP:
+Hypertext Transfer Protocol (HTTP) is an application-layer protocol for transmitting
+hypermedia documents, such as HTML. It was designed for communication between web 
+browsers and web servers.
+HTTPS:
+Hypertext Transfer Protocol Secure (HTTPS) is an extension of the Hypertext Transfer
+Protocol (HTTP).
+URL:
+A URL (Uniform Resource Locator) is a unique identifier used to locate a resource 
+on the Internet.It is also referred to as a web address.
+URI:
+A Uniform Resource Identifier (URI) is a character sequence that identifies a logical
+(abstract) or physical resource.
+Extansion:
+An extension, in computer operating systems, is a piece of software that enhances or
+“extends” the capabilities of a programming language or other applications.
+Editors:
+Editors or text editors are software programs that enable the user to create and edit
+text files.
+Network:
+A computer network is a group of interconnected nodes or computing devices that 
+exchange data and resources with each other.
+TCP:
+Transmission Control Protocol (TCP) is a communications standard that enables 
+application programs and computing devices to exchange messages over a network.
+IP:
+while IP is responsible for making sure the packets are sent to the right destination.
+Hosting:
+A host is a web server that stores and transmits the data for one or more websites. 
+Host can also refer to the service provider that leases this infrastructure, which
+is known as hosting.
+Domain:
+A domain is a group of connected Windows computers that share user account information
+and a security policy.
+Server:
+A server is a computer or system that provides resources, data, services, or programs 
+to other computers, known as clients, over a network.
+Client:
+A client is a computer or a program that, as part of its operation, relies on sending 
+a request to another program or a computer hardware or software that accesses a 
+service made available by a server.
+SEO:
+SEO means Search Engine Optimization and is the process used to optimize a website's 
+technical configuration.
+
+
