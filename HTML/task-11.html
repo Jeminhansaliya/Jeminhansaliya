@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Description</title>
+</head>
+<body>
+    <h2>Form</h2>
+    <p>An HTML form is used to collect user input. The user input is most often sent to a server for processing.</p>
+    <p>The HTML &lt;form&gt; element is used to create an HTML form for user input.</p>
+    <p>It provides facilities to input text, number, values, email, password, and control fields such as checkboxes, 
+       radio buttons, submit buttons, etc.</p>
+    <form action="">
+        <input type="text" name="username" id="">
+        <input type="submit" name="btn" id="">
+    </form>
+    <p>There are tow methods for sending client data to the server</p>
+    <hr><hr>
+    <h2>Method</h2>
+    <p>A form with two submit buttons. The first sends the form-data with method="get". The second sends the form-data 
+       with method="post".</p>
+       <hr>
+    <p><b>Get Method</b></p>
+    <p>This method appends the form-data to the URL in name/value pairs.</p>
+    <p>This method is useful for form submissions where a user want to bookmark the result.</p>
+    <p>There is a limit to how much data you can place in a URL (varies between browsers), therefore, you cannot be sure 
+       that all of the form-data will be correctly transferred.</p>
+    <p>Never use the "get" method to pass sensitive information!</p>
+    <hr>
+    <p><b>Post Method</b></p>
+    <p>This method sends the form-data as an HTTP post transaction.</p>
+    <p>Form submissions with the "post" method cannot be bookmarked.</p>
+    <p>POST has no size limitations,and can be used to send large amounts of data.</p>
+    <hr><hr>
+    <h2>Form Elements</h2>
+    <ul>
+        <li>&lt;label&gt;: It defines label for &lt;form&gt; elements.</li>
+        <li>&lt;input&gt;: It is used to get input data from the form in various types such as text, password, email, 
+            etc by changing its type.</li>
+        <li>&lt;button&gt;:It defines a clickable button to control other elements or execute a functionality.</li>
+        <li>&lt;select&gt;: It is used to create a drop-down list.</li> 
+        <li>&lt;textarea&gt;:It is used to get input long text content.</li>
+        <li>&lt;fieldset&gt;:It is used to draw a box around other form elements and group the related data.</li>
+        <li>&lt;legend&gt;: It defines a caption for fieldset elements.</li>
+        <li>&lt;datalist&gt;:It is used to specify pre-defined list options for input controls.</li>
+        <li>&lt;output&gt;:It displays the output of performed calculations.</li>
+        <li>&lt;option&gt;:It is used to define options in a drop-down list.</li>
+        <li>&lt;outgroup&gt;:It is used to define group-related options in a drop-down list.</li>
+    </ul>
+    <hr><hr>
+    <h2>Form Attributes</h2>
+    <ul>
+        <li>accept-charset:Specifies the character encodings used for form submission.</li>
+        <li>action:Specifies where to send the form-data when a form is submitted.</li>
+        <li>autocomplete:Specifies whether a form should have autocomplete on or off.</li>
+        <li>enctype:Specifies how the form-data should be encoded when submitting it to the server (only for method="post")</li>
+        <li>method:Specifies the HTTP method to use when sending form-data.</li>
+        <li>name:Specifies the name of the form.</li>
+        <li>novalidate:Specifies that the form should not be validated when submitted.</li>
+        <li>rel:Specifies the relationship between a linked resource and the current document.</li>
+        <li>target:Specifies where to display the response that is received after submitting the form.</li>
+    </ul>
+    
+</body>
+</html>
