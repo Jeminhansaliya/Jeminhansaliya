@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+/* a:link {
+  color: red;
+}
+
+a:visited {
+  color: blue;
+}
+
+a:hover {
+  color: rgba(81, 243, 216, 0.856);
+}
+
+a:active {
+  color: rgb(29, 211, 12);
+ } */
+
+ #info-1 { 
+  background-color: rgb(236, 85, 26);
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+#info-1:hover {
+  background-color: blue;
+ } 
+
+/* p {  
+  display: none;
+  background-color: rgb(207, 160, 30);
+  padding: 20px;
+}
+
+div:hover p {
+  display: block;
+ }  */
+ 
+ /* p:first-child { 
+  color: rgba(250, 24, 73, 0.877);
+ }  */
+
+ table, tr, td,th{
+            border: 1px solid;
+        }
+         tr th{
+            background-color: rgba(250, 38, 38, 0.952);
+            color: white;
+          }
+         tbody tr:nth-child(even){
+            background-color: rgba(238, 19, 121, 0.678);
+        }
+        tbody tr:nth-child(odd){
+            background-color: rgba(94, 245, 60, 0.726);
+        } 
+
+
+
+   
+    </style>
+</head>
+<body>
+    <h2>Pseudo Classes</h2>
+    <p>A CSS <b>pseudo-class</b> is a keyword added to a selector that specifies a special state of the selected element(s).</p>
+    <p>For example, the pseudo-class :hover can be used to select a button when a user's pointer hovers over the button and this
+       selected button can then be styled.</p>
+    <p>A pseudo-class consists of a colon (:) followed by the pseudo-class name (e.g., :hover).</p>
+    <p>Here, Many types of pseudo-classes.<b>Like Element display state pseudo-classes,Input pseudo-classes, are etc..</b></p>
+    <h3>Anchor pseudo-Classes</h3>
+    <a href="#">Click me</a>
+    <br>
+    <h3>Hover in Pseudo-Classes</h3>
+    <div id="info-1">Mouse Over me</div>
+    <br>
+    <div>Hover over me to show the &lt;p&gt; element.<p>I am here.</p></div>
+    <br>
+    <h3> The:first-child Pseudo-class</h3>
+    <div>
+      <p>The :first-child pseudo-class matches a specified element that is the first child of another element.</p>
+      <p>In the following example, the selector matches any &lt;p&gt; element that is the first child of any element:</p>
+    </div>
+    <br>
+    <h3>All CSS Pseudo Classes</h3>
+    <table>
+      <tr>
+        <th>Selecters</th>
+        <th>Example</th>
+        <th>Example Description</th>
+      </tr>
+      <tr>
+        <td>:active</td>
+        <td>a:active</td>
+        <td>Selects the active link</td>
+      </tr>
+      <tr>
+        <td>:checked</td>
+        <td>input:checked</td>
+        <td>Selects every checked &lt;input&gt; element</td>
+      </tr>
+      <tr>
+        <td>:disabled</td>
+        <td>input:disabled</td>
+        <td>Selects every disabled &lt;input&gt; element</td>
+      </tr>
+      <tr>
+        <td>:empty</td>
+        <td>P:empty</td>
+        <td>Selects every &lt;p&gt; element that has no children</td>
+      </tr>
+      <tr>
+        <td>:enabled</td>
+        <td>input:enabled</td>
+        <td>Selects every enabled &lt;input&gt; element</td>
+      </tr>
+      <tr>
+        <td>:first-child</td>
+        <td>p:first-child</td>
+        <td>Selects every &lt;p&gt; elements that is the first child of its parent</td>
+      </tr>
+      <tr>
+        <td>:first-of-type</td>
+        <td>p:first-of-type</td>
+        <td>Selects every &lt;p&gt; element that is the first &lt;p&gt; element of its parent</td>
+      </tr>
+      <tr>
+        <td>:focus</td>
+        <td>input:focus</td>
+        <td>Selects the &lt;input&gt; element that has focus</td>
+      </tr>
+      <tr>
+        <td>:hover</td>
+        <td>a:hover</td>
+        <td>Selects links on mouse over</td>
+      </tr>
+      <tr>
+        <td>:in-range</td>
+        <td>input:in-range</td>
+        <td>Selects  &lt;input&gt; elements with a value within a specified range</td>
+      </tr>
+      <tr>
+        <td>:invalid</td>
+        <td>input:invalid</td>
+        <td>Selects all  &lt;input&gt; elements with an invalid value</td>
+      </tr>
+      <tr>
+        <td>:lang(language)</td>
+        <td>p:lang(it)</td>
+        <td>Selects every &lt;p&gt; element with a lang attribute value starting with "it"</td>
+      </tr>
+      <tr>
+        <td>:last-child</td>
+        <td>p:last-child</td>
+        <td>Selects every &lt;p&gt; elements that is the last child of its parent</td>
+      </tr>
+      <tr>
+        <td>:last-of-type</td>
+        <td>p:last-of-type</td>
+        <td>Selects every &lt;p&gt; element that is the last &lt;p&gt; element of its parent</td>
+      </tr>
+      <tr>
+        <td>:link</td>
+        <td>a:link</td>
+        <td>Selects all unvisited links</td>
+      </tr>
+      <tr>
+        <td>:not(selector)</td>
+        <td>:not(p)</td>
+        <td>Selects every element that is not a &lt;p&gt; element</td>
+      </tr>
+      <tr>
+        <td>:nth-child(n)</td>
+        <td>p:nth-child(2)</td>
+        <td>Selects every &lt;p&gt; element that is the second child of its parent</td>
+      </tr>
+      <tr>
+        <td>:nth-last-child(n)</td>
+        <td>p:nth-last-child(2)</td>
+        <td>Selects every &lt;p&gt; element that is the second child of its parent, counting from the last child</td>
+      </tr>
+      <tr>
+        <td>:nth-last-of-type(n)</td>
+        <td>p:nth-last-of-type(2)</td>
+        <td>Selects every  &lt;p&gt; element that is the second  &lt;p&gt; element of its parent, counting from the last child</td>
+      </tr>
+      <tr>
+        <td>:nth-of-type(n)</td>
+        <td>p:nth-of-type(2)</td>
+        <td>Selects every &lt;p&gt; element that is the second &lt;p&gt; element of its parent</td>
+      </tr>
+      <tr>
+        <td>:only-of-type</td>
+        <td>p:only-of-type</td>
+        <td>Selects every &lt;p&gt; element that is the only &lt;p&gt; element of its parent</td>
+      </tr>
+      <tr>
+        <td>:only-child</td>
+        <td>p:only-child</td>
+        <td>Selects every &lt;p&gt; element that is the only child of its parent</td>
+      </tr>
+      <tr>
+        <td>:optional</td>
+        <td>input:optional</td>
+        <td>Selects &lt;input&gt; elements with no "required" attribute</td>
+      </tr>
+      <tr>
+        <td>:out-of-range</td>
+        <td>input:out-of-range</td>
+        <td>Selects &lt;input&gt; elements with a value outside a specified range</td>
+      </tr>
+      <tr>
+        <td>:read-only</td>
+        <td>input:read-only</td>
+        <td>Selects &lt;input&gt; elements with a "readonly" attribute specified</td>
+      </tr>
+      <tr>
+        <td>:read-write</td>
+        <td>input:read-write</td>
+        <td>Selects &lt;input&gt; elements with no "readonly" attribute</td>
+      </tr>
+      <tr>
+        <td>:required</td>
+        <td>input:required</td>
+        <td>Selects &lt;input&gt; elements with a "required" attribute specified</td>
+      </tr>
+      <tr>
+        <td>:root</td>
+        <td>root</td>
+        <td>Selects the document's root element</td>
+      </tr>
+      <tr>
+        <td>:target</td>
+        <td>#news:target</td>
+        <td>Selects the current active #news element (clicked on a URL containing that anchor name)</td>
+      </tr>
+      <tr>
+        <td>:valid</td>
+        <td>input:valid</td>
+        <td>Selects all &lt;input&gt; elements with a valid value</td>
+      </tr>
+      <tr>
+        <td>:visited</td>
+        <td>a:visited</td>
+        <td>Selects all visited links</td>
+      </tr>
+    </table>
+    
+    
+</body>
+</html>
