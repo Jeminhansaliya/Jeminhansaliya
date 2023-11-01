@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ::selection {
+          color:chocolate;
+          background: rgb(62, 248, 24);
+        }
+        ::marker { 
+          color: red;
+          font-size: 23px;
+        }
+        h3::before {
+          content:none;
+        }
+        p::first-line {
+          color: #fa048b;
+          font-variant:small-caps;
+        }
+        p::first-letter {
+          color:darkviolet;
+          font-size: xx-large;
+        }
+        table, tr, td,th{
+            border: 1px solid;
+        }
+         tr th{
+            background-color: rgba(255, 223, 40, 0.952);
+            color: white;
+          }
+         tbody tr:nth-child(even){
+            background-color:wheat;
+        }
+        tbody tr:nth-child(odd){
+            background-color:darkgray;
+        } 
+
+        </style>
+</head>
+<body>
+    <h2>CSS Pseudo-elements</h2>
+    <p>A CSS pseudo-element is used to style specified parts of an element.</p>
+    <ul>
+        <li>Style the first letter, or line, of an element</li>
+        <li>Insert content before, or after, the content of an element</li>
+    </ul>
+    <br>
+    <h3>The ::first-line Pseudo-element</h3>
+    <p>The ::first-line pseudo-element is used to add a special style to the first line of a text.</p>
+    <br>
+    <h3>The ::first-letter Pseudo-element</h3>
+    <p>The ::first-letter pseudo-element is used to add a special style to the first letter of a text.</p>
+    <br>
+    <h3>The ::before Pseudo-element</h3>
+    <p>The ::before pseudo-element can be used to insert some content before the content of an element.</p>
+    <br>
+    <h3>The ::after Pseudo-element</h3>
+    <p>The ::after pseudo-element can be used to insert some content after the content of an element.</p>
+    <br>
+    <h3>The ::marker Pseudo-element</h3>
+    <p>The ::marker pseudo-element selects the markers of list items.</p>
+    <ul>
+        <li>Animals</li>
+        <li>Birds</li>
+        <li>Insects</li>
+    </ul>
+    <br>
+    <h3>The ::selection Pseudo-element</h3>
+    <p>The ::selection pseudo-element matches the portion of an element that is selected by a user.</p>
+    <p>The following CSS properties can be applied to ::selection: color, background, cursor, and outline.</p>
+    <br>
+    <h3>All CSS Pseudo Elements</h3>
+    <table>
+        <tr>
+            <th>Selecters</th>
+            <th>Example</th>
+            <th>Example Description</th>
+        </tr>
+        <tr>
+            <td>::after</td>
+            <td>p::after</td>
+            <td>Insert something after the content of each &lt;p&gt; element</td>
+        </tr>
+        <tr>
+            <td>::before</td>
+            <td>p::before</td>
+            <td>Insert something before the content of each &lt;p&gt; element</td>
+        </tr>
+        <tr>
+            <td>::first-letter</td>
+            <td>p::first-letter</td>
+            <td>Selects the first letter of each &lt;p&gt; element</td>
+        </tr>
+        <tr>
+            <td>::first-line</td>
+            <td>p::first-line</td>
+            <td>Selects the first line of each  &lt;p&gt; element</td>
+        </tr>
+        <tr>
+            <td>::marker</td>
+            <td>::marker</td>
+            <td>Selects the markers of list items</td>
+        </tr>
+        <tr>
+            <td>::selection</td>
+            <td>p::selection</td>
+            <td>Selects the portion of an element that is selected by a user</td>
+        </tr>
+    </table>
+</body>
+</html>
