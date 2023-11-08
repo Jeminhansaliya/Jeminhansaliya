@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            background-color: black;
+            color: aliceblue;
+        }
+        h2 {
+            background-color: rgb(255, 115, 0);
+            color: black;
+        }
+        div.spel-1 {
+            background-color: cadetblue;
+            color: black;
+        }
+        div.spel-2 {
+            text-align: center;
+        }
+        p.a {
+            direction: rtl;
+            unicode-bidi:bidi-override;
+            background-color:darkolivegreen;
+            color: black;
+        }
+        p.b {
+            text-align-last:right;
+            background-color:rgb(255, 115, 0);
+            color: black; 
+        }
+        p.c {
+            vertical-align:bottom;
+        }
+        h2.a {
+            text-decoration-line: underline;
+            text-decoration-color: black;
+            text-decoration-style:dotted;
+            text-decoration-thickness:calc(5px);
+        }
+        h2.b {
+            text-transform: capitalize ;
+        }
+        p.d {
+            text-transform: uppercase;
+        }
+        p.e {
+            text-transform: lowercase;
+        }
+        p.f {
+            text-indent: 50px;
+        }
+        p.g {
+            letter-spacing: 5px;
+        }
+        p.h {
+            line-height: 0.9;
+        }
+        p.i {
+            word-spacing: 5px;
+        }
+        p.j {
+            white-space:nowrap;
+        }
+        h1.a {
+            color: white;
+            text-shadow: 1px 1px 2px cadetblue, 0 0 25px rgb(75, 75, 207), 0 0 5px darkblue;
+        }
+        </style>
+</head>
+<body>
+    <fieldset>
+    <h1>CSS Text</h1>
+    <p>Here, Many types of Text property in CSS.</p>
+    </fieldset>
+    <br>
+    <fieldset>
+    <h2>Text-Color</h2>
+    <div class="spel-1">
+    <p>The color property is used to set the color of the text.</p>
+    <ul>
+        <li>a color name - like "red"</li>
+        <li>a HEX value - like "#ff0000"</li>
+        <li>an RGB value - like "rgb(255,0,0)"</li>
+    </ul>     
+    </div>
+    </fieldset>
+    <br>
+    <fieldset>
+    <div class="spel-2">
+    <h2>Text Alignment</h2>
+    <p>The <b>text-align</b> property is used to set the horizontal alignment of a text.</p>
+    <p>A text can be left or right aligned, centered, or justified.</p>
+    <p>The following example shows center aligned, and left and right aligned text (left alignment is default if text
+       direction is left-to-right, and right alignment is default if text direction is right-to-left).</p>
+    <p>When the text-align property is set to "justify", each line is stretched so that every line has equal width, 
+       and the left and right margins are straight (like in magazines and newspapers).</p>
+    </div>
+    <br>
+    <p class="b"><b>Text Align Last</b></p>
+    <p class="b">The <b>text-align-last</b> property specifies how to align the last line of a text.</p>
+    <br>
+    <p class="a"><b>Text Direction</b></p>
+    <p class="a">The direction and unicode-bidi properties can be used to change the <b>text direction</b> of an element.</p>
+    <br>
+    <p class="c"><b>Vertical Alignment</b></p>
+    <p class="c">The vertical-align property sets the <b>vertical alignment</b> of an element.</p>
+    <p>this is Example.<img src="images/sbi-2.jpg" alt="processing" height="50px" width="50px" class="c"></p>
+    </fieldset>
+    <br>
+    <fieldset>
+    <h2 class="a">Text Decoration</h2>
+    <p>Here, Text Decoration have under this properties.</p>
+    <ul>
+        <li>text-decoration-line</li>
+        <li>text-decoration-color</li>
+        <li>text-decoration-style</li>
+        <li>text-decoration-thickness</li>
+        <li>text-decoration with Short-hand</li>
+    </ul>
+    </fieldset>
+    <br>
+    <fieldset>
+        <h2 class="b">Text Transformation</h2>
+        <p class="d">The text-transform property is used to specify uppercase and lowercase letters in a text.</p>
+        <p class="e">It can be used to turn everything into uppercase or lowercase letters, or capitalize the first letter of each word</p>
+    </fieldset>
+    <br>
+    <fieldset>
+        <h2>Text Spacing</h2>
+        <p>Here, Text Spacing have under this properties.</p>
+        <ul>
+            <li>text-indent</li>
+            <li>letter-spacing</li>
+            <li>line-height</li>
+            <li>word-spacing</li>
+            <li>white-space</li>
+        </ul>
+        <p><b>Text-Indentation</b></p>
+        <p class="f">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum necessitatibus maxime voluptatum unde 
+           possimus eius, repudiandae nisi numquam rem eaque, rerum inventore dolore in, aperiam tenetur explicabo 
+           commodi quaerat fuga! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quasi cupiditate ipsam. Debitis 
+           animi voluptate sed repellendus, quo esse, dolorum aliquid cum quasi consectetur molestiae, mollitia tempore accusantium! 
+           Sunt, incidunt.</p>
+        <p><b>Letter-Spacing</b></p>
+        <p class="g">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id et vitae unde tempora numquam eveniet, impedit 
+           architecto harum cum. Quis ab ducimus in, earum ut iste nesciunt deserunt id veniam! Lorem ipsum dolor sit amet, consectetur 
+           adipisicing elit. Harum magni consequuntur, voluptatem at quisquam veritatis, et dolorum suscipit id dicta quos dolore iure 
+           quasi, eum ipsum dolor omnis deserunt. Laborum.</p>
+        <p><b>Line-Height</b></p>
+        <p class="h">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nisi in tenetur dolor hic, pariatur exercitationem, 
+           aliquam neque, quis vel repudiandae officiis incidunt reprehenderit! Soluta iure error ullam vitae dolore? Lorem ipsum dolor, 
+           sit amet consectetur adipisicing elit. Magni alias ipsam, eaque impedit nostrum explicabo nemo, exercitationem quia atque adipisci 
+           aspernatur fugit maxime vel ullam rem facilis voluptatem voluptas soluta!</p>
+        <p><b>Word-Spacing</b></p>
+        <p class="i">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque voluptatibus incidunt quo, officiis facilis nam ipsum! 
+           Commodi corporis voluptate harum excepturi porro vero. Corporis magnam labore, voluptate laboriosam velit quo? Lorem ipsum dolor 
+           sit amet, consectetur adipisicing elit. Impedit aliquam veritatis minus atque molestiae odit repudiandae dolore tempora dolor 
+           voluptas debitis provident suscipit quis veniam ipsa, pariatur sequi maxime rerum!</p>
+        <p><b>White-Space</b></p>
+        <p class="j">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, magnam. Est, numquam labore tenetur reiciendis nulla, 
+           animi quos asperiores eum ratione iste mollitia cum distinctio? Exercitationem aliquam perspiciatis laborum voluptates! </p>
+</fieldset>
+<br>
+
+    <h1 class="a">Text-Shadow</h1>
+
+
+</body>
+</html>
