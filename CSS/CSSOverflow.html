@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2 {
+            text-align: center;
+            text-shadow: 2px gray;
+        }
+        .a {
+            background-color: rgb(235, 119, 209);
+            width: 200px;
+            height: 65px;
+            border: 1px solid;
+            overflow: visible;
+        }
+        .b {
+            background-color: rgb(235, 119, 209);
+            width: 200px;
+            height: 65px;
+            border: 1px solid;
+            overflow:hidden;
+        }
+        .c {
+            background-color: rgb(235, 119, 209);
+            width: 200px;
+            height: 65px;
+            border: 1px solid;
+            overflow: auto;
+        }
+        .d {
+            background-color: rgb(235, 119, 209);
+            width: 200px;
+            height: 65px;
+            border: 1px solid;
+            overflow:scroll;
+        }
+        .e {
+            background-color: rgb(235, 119, 209);
+            width: 200px;
+            height: 65px;
+            border: 1px solid;
+            overflow-x: scroll;
+        }
+        .f {
+            background-color: rgb(235, 119, 209);
+            width: 200px;
+            height: 65px;
+            border: 1px solid;
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+<body>
+    <h2>Overflow</h2>
+    <p>The overflow property specifies whether to clip the content or to add scrollbars when the content of an 
+       element is too big to fit in the specified area.</p>
+    <p>The overflow property has the following values.</p>
+    <ul>
+        <li><b>visible</b>- Default. The overflow is not clipped. The content renders outside the element's box</li>
+        <li><b>hidden</b>- The overflow is clipped, and the rest of the content will be invisible</li>
+        <li><b>scroll</b>- The overflow is clipped, and a scrollbar is added to see the rest of the content</li>
+        <li><b>auto</b>- Similar to scroll, but it adds scrollbars only when necessary</li>
+    </ul>
+    <p>Like Examples.</p>
+    <div class="a">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, ut impedit inventore quisquam nemo porro 
+           voluptatem possimus voluptatibus provident autem fugit architecto? Quidem corrupti fugit non cumque illo 
+           maxime temporibus.</p>
+    </div>
+    <br>
+    <div class="b">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate non, totam accusantium culpa veniam
+           blanditiis delectus debitis in, repudiandae veritatis cum inventore suscipit, nostrum ullam eaque. Porro 
+           laborum voluptates adipisci!</p>
+    </div>
+    <br>
+    <div class="c">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum quas iusto id, molestiae nam recusandae 
+           consequuntur autem ipsum, voluptatem ullam asperiores culpa voluptatum quia quisquam eligendi, molestias 
+           at unde dolorum.</p>
+    </div>
+    <br>
+    <div class="d">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, ut impedit inventore quisquam nemo porro 
+           voluptatem possimus voluptatibus provident autem fugit architecto? Quidem corrupti fugit non cumque illo 
+           maxime temporibus.</p>
+    </div>
+    <br>
+    <div class="e">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, ut impedit inventore quisquam nemo porro 
+           voluptatem possimus voluptatibus provident autem fugit architecto? Quidem corrupti fugit non cumque illo 
+           maxime temporibus.</p>
+    </div>
+    <br>
+    <div class="f">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, ut impedit inventore quisquam nemo porro 
+           voluptatem possimus voluptatibus provident autem fugit architecto? Quidem corrupti fugit non cumque illo 
+           maxime temporibus.</p>
+    </div>
+</body>
+</html>
