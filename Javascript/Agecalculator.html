@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <style>
+        body {
+            text-align: center;
+            margin: 50px;
+            font-style:normal;
+        }
+
+        #result {
+            font-style:normal;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Age Calculator</h1>
+
+    <label for="dob">Birthdate</label>
+    <input type="date" id="dob">
+    <br>
+    <br>
+    <button onclick="calculateAge()">Submit</button>
+
+    <div id="result"></div>
+
+    <script>
+        function calculateAge() {
+            // Get the user's date of birth from the input field
+            var dobInput = document.getElementById('dob');
+            var dobValue = dobInput.value;
+
+            if (!dobValue) {
+                alert('Please enter a valid date of birth.');
+                return;
+            }
+
+            // Convert the user's date of birth to a JavaScript Date object
+            var dobDate = new Date(dobValue);
+
+            // Calculate the current date
+            var currentDate = new Date();
+
+            // Calculate the age
+            var ageInMilliseconds = currentDate - dobDate;
+            var ageInSeconds = ageInMilliseconds / 1000;
+            var ageInMinutes = ageInSeconds / 60;
+            var ageInHours = ageInMinutes / 60;
+            var ageInDays = ageInHours / 24;
+            var ageInYears = ageInDays / 365;
+
+            // Round down to the nearest whole number for simplicity
+            ageInYears = Math.floor(ageInYears);
+            ageInDays = Math.floor((ageInYears % 1) * 365);
+
+            // Display the result on the web page
+            var resultElement = document.getElementById('result');
+            resultElement.innerHTML = 'Your age is: ' + ageInYears + ' years and ' + ageInDays + ' days.';
+        }
+    </script>
+</body>
+</html>
