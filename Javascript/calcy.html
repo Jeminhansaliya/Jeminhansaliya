@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a1 {
+            margin: 20px;
+           
+        }
+        .a2 {
+            margin: 20px;
+            
+        }
+        .b1 {
+            margin: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="first number" id="a1">
+    <input type="text" placeholder="second number" id="a2">
+    <br>
+    <div class="b1">
+    <button onclick="add()">Add</button>
+    <button onclick="sub()">Sub</button>
+    <button onclick="multi()">Multi</button>
+    <button onclick="divi()">Divi</button>
+    <button onclick="mode()">Mode</button>
+    </div>
+    <br>
+    <h1 id="result"></h1>
+    <script>
+        var number1 = document.getElementById("a1")
+        var number2 = document.getElementById("a2")
+
+        function add()
+        {
+            let sum = parseFloat(number1.value) + parseFloat(number2.value)
+            
+            document.getElementById("result").innerHTML = sum
+        }
+        function sub()
+        {
+            let sum = parseFloat(number1.value) - parseFloat(number2.value)
+
+            document.getElementById("result").innerHTML = sum
+        }
+        function multi()
+        {
+            let sum = parseFloat(number1.value) * parseFloat(number2.value)
+
+            document.getElementById("result").innerHTML = sum
+        }
+        function divi()
+        {
+            let sum = parseFloat(number1.value) / parseFloat(number2.value)
+
+            document.getElementById("result").innerHTML = sum
+        }
+        function mode()
+        {
+            let sum = parseFloat(number1.value) % parseFloat(number2.value)
+
+            document.getElementById("result").innerHTML = sum
+        }
+        
+
+    </script>
+
+    
+    
+</body>
+</html>
