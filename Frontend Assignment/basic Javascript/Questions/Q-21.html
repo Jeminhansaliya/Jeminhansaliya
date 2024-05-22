@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Q-21)What is the use of Void (0)?</h2>
+    <p>You might have occasionally came across “javascript:void(0)” in an HTML Document.</p>
+    <p> It is often used when inserting an expression in a web page might produce some unwanted effect. </p>
+    <p>To remove this effect, “javascript:void(0)” is used. This expression returns undefined primitive value.</p>
+    <p>This is often used with hyperlinks. Sometimes, you will decide to call some JavaScript from inside a link.</p>
+    <p id="res"></p>
+    <a href="javascript:void(0);" onclick="fun()"> 
+         click on me </a> 
+    </p> 
+    <script> 
+        function fun() { 
+            document.getElementById("res").innerHTML = "Welcome to my page"; 
+        } 
+    </script>
+</body>
+</html>

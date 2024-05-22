@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Q-23)Find the Character Is Vowel or Not ?</h2>
+    <h3 id="ans1"></h3>
+    <h3 id="ans2"></h3>
+    <h3 id="ans3"></h3>
+
+
+            <script>
+                const ch = prompt('Enter a Character')
+                if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u')
+                document.getElementById('ans1').innerHTML = ("<b>"+ch+"</b>" + " is a Vowel");
+                else if(ch=='A' || ch=='E' || ch=='I' || ch=='O' || ch=='U')
+                document.getElementById('ans2').innerHTML = ("<b>"+ch+"</b>" + " is a Vowel");
+                else
+                document.getElementById('ans3').innerHTML = ("<b>"+ch+"</b>" + " is a Character");
+            </script>
+    
+</body>
+</html>

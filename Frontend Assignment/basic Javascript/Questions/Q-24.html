@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Q-24) Write to check whether a number is negative, positive or zero?</h2>
+    <h3 id="res"></h3>
+    <script>
+        const number = prompt("enter a number");
+        if (number > 0) {
+            document.getElementById("res").innerHTML =(number + " is Positive");
+        } else if (number < 0) {
+            document.getElementById("res").innerHTML =(number + " is Negative");
+        } else  {
+            document.getElementById("res").innerHTML =(number + " is Zero");
+        }
+    </script>
+</body>
+</html>
